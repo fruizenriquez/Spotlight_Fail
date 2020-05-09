@@ -1,0 +1,81 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/9/2020 12:34:44 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="VIC-GIT-N1801"
+  DTS:CreatorName="NAVITAS\Fernando.Ruiz"
+  DTS:DTSID="{9AFBC2B8-9B00-41A8-BBC2-E4D7985E1E4F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1300.371"
+  DTS:LocaleID="3081"
+  DTS:ObjectName="Import File to DB"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{F6DE7FD9-19CF-4B1C-A360-1B9F812AA160}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[data - City.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{38F7D68E-DCBD-4487-AADB-3D470CD9106C}"
+      DTS:ObjectName="data - City.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\fernando.ruiz.HQ.000\source\repos\SSIS_Spotlight\data - City.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[VIC-GIT-N1801\MSSQLSERVER03.DBExample]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{1BA53595-4C89-4F3F-8518-5FC54168439D}"
+      DTS:ObjectName="VIC-GIT-N1801\MSSQLSERVER03.DBExample">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=VIC-GIT-N1801\MSSQLSERVER03;Initial Catalog=DBExample;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Bulk Insert Task"
+      DTS:CreationName="Microsoft.BulkInsertTask"
+      DTS:Description="Bulk Insert Task"
+      DTS:DTSID="{21EAB45F-4B1A-457C-BFB0-79838AF92BE9}"
+      DTS:ExecutableType="Microsoft.BulkInsertTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Bulk Insert Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <BulkInsertTask:BulkInsertTaskData
+          BulkInsertTask:SourceConnectionName="{38F7D68E-DCBD-4487-AADB-3D470CD9106C}"
+          BulkInsertTask:DestinationConnectionName="{1BA53595-4C89-4F3F-8518-5FC54168439D}"
+          BulkInsertTask:DestinationTableName="[dbo].[City]"
+          BulkInsertTask:FieldTerminator="Comma {,}" xmlns:BulkInsertTask="www.microsoft.com/sqlserver/dts/tasks/bulkinserttask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Bulk Insert Task"
+          TopLeft="41.2499993853271,28.5999994885922" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

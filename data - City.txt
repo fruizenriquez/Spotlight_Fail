@@ -1,0 +1,8 @@
+1,Lima,5965
+2,Melbourne,5845
+3,Sydney,2587
+4,Cusco,6987
+5,New York,4875
+6,California,1254
+7,Perth,4587
+8,Ayacucho,5656
