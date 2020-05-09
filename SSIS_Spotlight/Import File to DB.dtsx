@@ -11,8 +11,8 @@
   DTS:LocaleID="3081"
   DTS:ObjectName="Import File to DB"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{F6DE7FD9-19CF-4B1C-A360-1B9F812AA160}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{CC990716-C4D8-4D84-BF2F-B04E8F879E9A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -40,13 +40,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Bulk Insert Task"
+      DTS:refId="Package\Upload City DB"
       DTS:CreationName="Microsoft.BulkInsertTask"
       DTS:Description="Bulk Insert Task"
       DTS:DTSID="{21EAB45F-4B1A-457C-BFB0-79838AF92BE9}"
       DTS:ExecutableType="Microsoft.BulkInsertTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Bulk Insert Task"
+      DTS:ObjectName="Upload City DB"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -71,9 +71,9 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\Bulk Insert Task"
-          TopLeft="41.2499993853271,28.5999994885922" />
+          Size="327.333333333334,209.333333333334"
+          Id="Package\Upload City DB"
+          TopLeft="159.999997615814,51.5666657445829" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
