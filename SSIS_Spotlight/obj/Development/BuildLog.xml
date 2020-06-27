@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>SSIS_Spotlight</Name>
-    <LastWriteTime>2020-05-09T02:46:59.8365163Z</LastWriteTime>
+    <LastWriteTime>2020-05-09T03:22:29.8660074Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2020-05-09T02:51:11.9659312Z</LastWriteTime>
+      <Name>Import File to DB.dtsx</Name>
+      <LastWriteTime>2020-06-27T15:59:11.6546538Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
